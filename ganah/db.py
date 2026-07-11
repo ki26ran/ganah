@@ -2,7 +2,6 @@
 
 Shoonya-fy26.py is the session key capture script — do NOT edit.
 It uses its own DB_PATH = os.path.join(__file__ dir, "auth.duckdb").
-A symlink auth/auth.duckdb -> auth/ganah.duckdb resolves the difference.
 """
 
 import os
@@ -10,7 +9,7 @@ import duckdb
 import pandas as pd
 
 _GANAH_DIR = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_DB_PATH = os.path.join(_GANAH_DIR, "auth", "ganah.duckdb")
+DEFAULT_DB_PATH = os.path.join(_GANAH_DIR, "auth", "auth.duckdb")
 
 
 def _resolve(db_path=None):
