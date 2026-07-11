@@ -1,0 +1,22 @@
+# Auth credential DB — do NOT commit
+auth.duckdb
+auth/*.duckdb
+*.duckdb
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
